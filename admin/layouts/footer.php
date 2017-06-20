@@ -46,7 +46,7 @@
     /**
      * load image thunbar
      */
-   
+    $url = $(location).attr('href'); 
     var loadFileThunbar = function(event) {
         var outputthunbar = document.getElementsByClassName('outputthunbar');
         outputthunbar[0].src = URL.createObjectURL(event.target.files[0]);
@@ -68,4 +68,25 @@
             }
         }
    });
+
+       /**
+     * lọc doanh thu
+     * @type {[type]}
+     */
+     $tableresponsive = $(".table-responsive");
+    $timequery = $("#timequery");
+    $timequery.change(function(){
+        $time = $(this).val();
+        console.log($time);
+        $.ajax({
+            url: $url + "action.php",
+            type:'POST',
+            data:{'time':$time},
+            async:true,
+            success:function(data)
+            {
+                $tableresponsive.html(data);
+            }
+        })
+    })
 </script>

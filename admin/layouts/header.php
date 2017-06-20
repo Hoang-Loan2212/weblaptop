@@ -195,6 +195,22 @@
                                         
                                     </ul>
                                 </li>
+                                <li class="<?php echo isset($open) && $open == 'revenue' ? 'active' : '' ?>">
+                                    <a href="javascript:;">
+                                    <i class="icon-user"></i>
+                                    <span class="title"> Doanh thu </span>
+                                    <span class="arrow "></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="<?php echo isset($active) && $active == 'revenue' ? 'active' : ''  ?>" >
+                                            <a href="<?php echo modules('revenue') ?>">
+                                                <i class="fa fa-list"></i>
+                                                Danh sách  
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
 
                                 <!-- END ANGULARJS LINK -->
                                 

@@ -26,13 +26,13 @@
      * sản phẩm hót
      */
     
-    $sqlhot = "SELECT * FROM sanpham WHERE hot = 1 ORDER BY id DESC LIMIT 3  ";
+    $sqlhot = "SELECT * FROM sanpham WHERE hot = 1 ORDER BY id DESC LIMIT 4  ";
     $sanphamhot = $db->fetchsql($sqlhot);
 
       /** sản phẩm mới
      */
     
-    $sqlnew = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC LIMIT 3  ";
+    $sqlnew = "SELECT * FROM sanpham WHERE 1 ORDER BY id DESC LIMIT 4  ";
     $sanphamnew = $db->fetchsql($sqlnew);
 
     $tongsanphamgiohang = 0;

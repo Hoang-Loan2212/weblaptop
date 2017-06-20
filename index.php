@@ -4,7 +4,6 @@
      * gọi file autoload
      */
     require_once __DIR__ . "/autoload/autoload.php";
-    // session_destroy();
    
 ?>  
     <?php  require_once __DIR__ . "/include/header.php"; ?>
@@ -53,7 +52,7 @@
                         <?php endforeach ; ?>
                     </div>
                 </section>
-
+               
             </div>
         </div>
 

@@ -60,7 +60,7 @@
         <div class="breadcrumbs theme-clearfix">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="">Home</a><span class="divider"></span></li>
+                    <li><a href="<?php echo base_url() ?>">Home</a><span class="divider"></span></li>
                     <li class="active"><span> Danh mục sản phẩm </span></li>
                 </ul>
             </div>
