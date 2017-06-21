@@ -44,9 +44,11 @@
                 $id_instart2 = $db->insert("chitietdonhang",$data2);
                 
             }
-
+            $_SESSION['kh_name']  = $data['ten'];
+            $_SESSION['kh_phone'] = $data['sodienthoai'];
+            $_SESSION['kh_email'] = $data['email'];
             unset($_SESSION['cart']);
-            unset($_SESSION['tongtien']);
+            // unset($_SESSION['tongtien']);
             $_SESSION['success'] = ' Mua hàng thành công ! Vui lòng đợi bộ phân thanh toán xác nhận  ' ;
             redirectStyle('thong-bao-thanh-toan.php');
 
